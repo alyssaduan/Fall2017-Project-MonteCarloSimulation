@@ -5,6 +5,7 @@ Computing in Finance(Fall 2017) - Monte Carlo Simulation Project
 RECOMMENDS:
 
 	Recommend JRE 1.8
+	
      	Recommend Eclipse for IDE
 
 MY RESULT:
@@ -21,7 +22,7 @@ INSTRUCTIONS FOR COMPILE:
 
 When the program is compiled in command line:	
 
-	**IMPORTANT**: Before run the program, download the latest joda-time jar file. In Eclipse look the project package and copy/drag joda-time-2.1.jar into it. Right click on the project again then follow the steps to add jars: 襊roperties, Java Build Path, Libraries, Add Jars, joda-time-2.1.jar. 
+	**IMPORTANT**: Before run the program, download the latest joda-time jar file. In Eclipse look the project package and copy/drag joda-time-2.1.jar into it. Right click on the project again then follow the steps to add jars: properties, Java Build Path, Libraries, Add Jars, joda-time-2.1.jar. 
 
 	**IMPORTANT**: Before run the program, download the latest Mockito mocking-core-2.11.0.jar file and extract its contents. In Eclipse look the project package and copy/drag mocking-core-2.11.0.jar into it. Right click on the project again then follow the steps to add jars: Properties, Java Build Path, Libraries, Add Jars, mocking-core-2.11.0.jar. 
 	
@@ -37,7 +38,7 @@ DESCRIPTION:
  	- byte-buddy-1.6.5.jar (url for download: https://mvnrepository.com/artifact/net.bytebuddy/byte-buddy/1.6.5)
 	- byte-buddy-agent-1.6.5.jar (url for download: https://mvnrepository.com/artifact/net.bytebuddy/byte-buddy-agent/1.6.5)
 
- Please Note: When I was using mockito for Junit testing, I've got the "Could not initialize plugin: interface org.mockito.plugins.MockMaker" exception message and couldn't run the JUnit test. I found a solution to it which is adding 3 more libraries(last 3 .jar files) to the program. Details please see url for more detail: https://stackoverflow.com/questions/41956692/could-not-initialize-plugin-interface-org-mockito-plugins-mockmaker
+Please Note: When I was using mockito for Junit testing, I've got the "Could not initialize plugin: interface org.mockito.plugins.MockMaker" exception message and couldn't run the JUnit test. I found a solution to it which is adding 3 more libraries(last 3 .jar files) to the program. Details please see url for more detail: https://stackoverflow.com/questions/41956692/could-not-initialize-plugin-interface-org-mockito-plugins-mockmaker
 
 * This program contains three interfaces:
 
@@ -45,9 +46,11 @@ DESCRIPTION:
 		PayOut interface
 		StockPath interface
 
-		RandomVectorGenerator interface: This interface of generating the random vectors, the returned double[] should be the vector of standard normally distributed numbers.
-		PayOut interface: This interface of calculate the payout, the returned double should be the payout after each simulation.
-		StockPath interface: This interface of generating the simulate stock paths, the returned List<DPPoint> should be the list of Date-Price Points. 
+*RandomVectorGenerator interface: This interface of generating the random vectors, the returned double[] should be the vector of standard normally distributed numbers.
+
+*PayOut interface: This interface of calculate the payout, the returned double should be the payout after each simulation.
+
+*StockPath interface: This interface of generating the simulate stock paths, the returned List<DPPoint> should be the list of Date-Price Points. 
 
 * This program contains eight java class files:
 
@@ -83,9 +86,12 @@ DESCRIPTION:
 		DPPointTest
 		MonteCarloSimulationTest(This test contains 3 tests: test for AsianCallPayout, EuropeanCallPayout, Brownian Stock Path using Mokito)
 
-*GuassianRandomVeriableGeneratorTest: This test returns the size of the random generate vector. 
+*GuassianRandomVeriableGeneratorTest: This test returns the size of the random generate vector.
+
 *AntitheticDecoratorGeneratorTest: This test returns the size of the decorated random generate vector.
+
 *DPPointTest: This test checks getdateValue method and getPriceValue method. 
+
 *MonteCarloSimulationTest: This test includes three mockito tests, testBrownianPath, testEuropeanCallPayOut and testAsianCallPayOut. 
 
 
