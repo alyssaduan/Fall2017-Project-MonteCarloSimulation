@@ -5,8 +5,7 @@ Computing in Finance(Fall 2017) - Monte Carlo Simulation Project
 RECOMMENDS:
 
 	Recommend JRE 1.8
-	
-     	Recommend Eclipse for IDE
+	Recommend Eclipse for IDE
 
 MY RESULT:
 
