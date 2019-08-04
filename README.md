@@ -3,16 +3,19 @@
 Computing in Finance(Fall 2017) - Monte Carlo Simulation Project
 
 RECOMMENDS:
+
 		Recommend JRE 1.8
      		Recommend Eclipse for IDE
 
 MY RESULT:
+
       		 Use European call, the value of a call option after 252 days is $6.391238918865717 and the call option should be priced $6.2321921046379. Also, it takes 1280926 times simulation to converge. 
       		 Use Asian call, the value of a call option after 252 days is $2.251201872994745 and the call option should be priced $2.1951804207178434. Also, it takes 254026 times simulation to converge. 
 
 INSTRUCTIONS FOR COMPILE:
 
 * When the program is compiled in command line:	
+
 	**IMPORTANT**: Before run the program, download the latest joda-time jar file. In Eclipse look the project package and copy/drag joda-time-2.1.jar into it. Right click on the project again then follow the steps to add jars: 襊roperties, Java Build Path, Libraries, Add Jars, joda-time-2.1.jar. 
 
 	**IMPORTANT**: Before run the program, download the latest Mockito mocking-core-2.11.0.jar file and extract its contents. In Eclipse look the project package and copy/drag mocking-core-2.11.0.jar into it. Right click on the project again then follow the steps to add jars: Properties, Java Build Path, Libraries, Add Jars, mocking-core-2.11.0.jar. 
@@ -22,15 +25,17 @@ INSTRUCTIONS FOR COMPILE:
 DESCRIPTION:
 
 * This program is using following Java libraries:
- - joda-time-2.9.9.jar (url for download: https://mvnrepository.com/artifact/joda-time/joda-time/2.9.9)
- - mockito-core-2.11.0.jar (url for download: https://mvnrepository.com/artifact/org.mockito/mockito-core/2.11.0)
- - objenesis-2.5.jar (url for download: https://mvnrepository.com/artifact/org.objenesis/objenesis/2.5)
- - byte-buddy-1.6.5.jar (url for download: https://mvnrepository.com/artifact/net.bytebuddy/byte-buddy/1.6.5)
- - byte-buddy-agent-1.6.5.jar (url for download: https://mvnrepository.com/artifact/net.bytebuddy/byte-buddy-agent/1.6.5)
+
+ 	- joda-time-2.9.9.jar (url for download: https://mvnrepository.com/artifact/joda-time/joda-time/2.9.9)
+ 	- mockito-core-2.11.0.jar (url for download: https://mvnrepository.com/artifact/org.mockito/mockito-core/2.11.0)
+ 	- objenesis-2.5.jar (url for download: https://mvnrepository.com/artifact/org.objenesis/objenesis/2.5)
+ 	- byte-buddy-1.6.5.jar (url for download: https://mvnrepository.com/artifact/net.bytebuddy/byte-buddy/1.6.5)
+	- byte-buddy-agent-1.6.5.jar (url for download: https://mvnrepository.com/artifact/net.bytebuddy/byte-buddy-agent/1.6.5)
 
  Please Note: When I was using mockito for Junit testing, I've got the "Could not initialize plugin: interface org.mockito.plugins.MockMaker" exception message and couldn't run the JUnit test. I found a solution to it which is adding 3 more libraries(last 3 .jar files) to the program. Details please see url for more detail: https://stackoverflow.com/questions/41956692/could-not-initialize-plugin-interface-org-mockito-plugins-mockmaker
 
 * This program contains three interfaces:
+
 	*RandomVectorGenerator interface
 	*PayOut interface
 	*StockPath interface
@@ -40,6 +45,7 @@ DESCRIPTION:
 	*StockPath interface: This interface of generating the simulate stock paths, the returned List<DPPoint> should be the list of Date-Price Points. 
 
 * This program contains eight java class files:
+
 	*GuassianRandomVeriableGenerator
 	*AntitheticDecoratorGenerator
 	*CallOptionPayout
@@ -66,6 +72,7 @@ DESCRIPTION:
 	*MonteCarloSimulation: This is the MonteCarloSimulation class. This is the class of simulation manager and uses 3 inputs to run the simulation and decide when to stop. 
 
 * This program contains four test files:
+
 	*GuassianRandomVeriableGeneratorTest
 	*AntitheticDecoratorGeneratorTest
 	*DPPointTest
