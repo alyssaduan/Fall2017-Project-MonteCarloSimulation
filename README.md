@@ -3,14 +3,12 @@
 Computing in Finance(Fall 2017) - Monte Carlo Simulation Project
 
 RECOMMENDS:
-      * Recommend JRE 1.8
-      * Recommend Eclipse for IDE
+		Recommend JRE 1.8
+     		Recommend Eclipse for IDE
 
 MY RESULT:
-      * Use European call, the value of a call option after 252 days is $6.391238918865717 and the call option should be priced $6.2321921046379.
-	Also, it takes 1280926 times simulation to converge. 
-      * Use Asian call, the value of a call option after 252 days is $2.251201872994745 and the call option should be priced $2.1951804207178434.
-	Also, it takes 254026 times simulation to converge. 
+      		 Use European call, the value of a call option after 252 days is $6.391238918865717 and the call option should be priced $6.2321921046379. Also, it takes 1280926 times simulation to converge. 
+      		 Use Asian call, the value of a call option after 252 days is $2.251201872994745 and the call option should be priced $2.1951804207178434. Also, it takes 254026 times simulation to converge. 
 
 INSTRUCTIONS FOR COMPILE:
 
