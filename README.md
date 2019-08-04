@@ -21,11 +21,11 @@ INSTRUCTIONS FOR COMPILE:
 
 When the program is compiled in command line:	
 
-	**IMPORTANT**: Before run the program, download the latest joda-time jar file. In Eclipse look the project package and copy/drag joda-time-2.1.jar into it. Right click on the project again then follow the steps to add jars: properties, Java Build Path, Libraries, Add Jars, joda-time-2.1.jar. 
+**IMPORTANT**: Before run the program, download the latest joda-time jar file. In Eclipse look the project package and copy/drag joda-time-2.1.jar into it. Right click on the project again then follow the steps to add jars: properties, Java Build Path, Libraries, Add Jars, joda-time-2.1.jar. 
 
-	**IMPORTANT**: Before run the program, download the latest Mockito mocking-core-2.11.0.jar file and extract its contents. In Eclipse look the project package and copy/drag mocking-core-2.11.0.jar into it. Right click on the project again then follow the steps to add jars: Properties, Java Build Path, Libraries, Add Jars, mocking-core-2.11.0.jar. 
+**IMPORTANT**: Before run the program, download the latest Mockito mocking-core-2.11.0.jar file and extract its contents. In Eclipse look the project package and copy/drag mocking-core-2.11.0.jar into it. Right click on the project again then follow the steps to add jars: Properties, Java Build Path, Libraries, Add Jars, mocking-core-2.11.0.jar. 
 	
-	**IMPORTANT**: In order to avoid the execption while using Mockito(Could not initialize plugin: interface org.mockito.plugins.MockMaker), add three additional jars to the program lib. objenesis-2.5.jar, byte-buddy-1.6.5.jar and byte-buddy-agent-1.6.5.jar. These three jar files are available under lib folder of the program.
+**IMPORTANT**: In order to avoid the execption while using Mockito(Could not initialize plugin: interface org.mockito.plugins.MockMaker), add three additional jars to the program lib. objenesis-2.5.jar, byte-buddy-1.6.5.jar and byte-buddy-agent-1.6.5.jar. These three jar files are available under lib folder of the program.
 
 DESCRIPTION:
 
