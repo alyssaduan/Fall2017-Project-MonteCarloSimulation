@@ -4,17 +4,22 @@ Computing in Finance(Fall 2017) - Monte Carlo Simulation Project
 
 RECOMMENDS:
 
-		Recommend JRE 1.8
-     		Recommend Eclipse for IDE
+	Recommend JRE 1.8
+     	Recommend Eclipse for IDE
 
 MY RESULT:
 
-      		 Use European call, the value of a call option after 252 days is $6.391238918865717 and the call option should be priced $6.2321921046379. Also, it takes 1280926 times simulation to converge. 
-      		 Use Asian call, the value of a call option after 252 days is $2.251201872994745 and the call option should be priced $2.1951804207178434. Also, it takes 254026 times simulation to converge. 
+      	Use European call, the value of a call option after 252 days is $6.391238918865717
+	The call option should be priced $6.2321921046379. 
+	Also, it takes 1280926 times simulation to converge. 
+	
+      	Use Asian call, the value of a call option after 252 days is $2.251201872994745 
+	The call option should be priced $2.1951804207178434. 
+	Also, it takes 254026 times simulation to converge. 
 
 INSTRUCTIONS FOR COMPILE:
 
-* When the program is compiled in command line:	
+When the program is compiled in command line:	
 
 	**IMPORTANT**: Before run the program, download the latest joda-time jar file. In Eclipse look the project package and copy/drag joda-time-2.1.jar into it. Right click on the project again then follow the steps to add jars: 襊roperties, Java Build Path, Libraries, Add Jars, joda-time-2.1.jar. 
 
@@ -36,24 +41,24 @@ DESCRIPTION:
 
 * This program contains three interfaces:
 
-	*RandomVectorGenerator interface
-	*PayOut interface
-	*StockPath interface
+		RandomVectorGenerator interface
+		PayOut interface
+		StockPath interface
 
-	*RandomVectorGenerator interface: This interface of generating the random vectors, the returned double[] should be the vector of standard normally distributed numbers.
-	*PayOut interface: This interface of calculate the payout, the returned double should be the payout after each simulation.
-	*StockPath interface: This interface of generating the simulate stock paths, the returned List<DPPoint> should be the list of Date-Price Points. 
+		RandomVectorGenerator interface: This interface of generating the random vectors, the returned double[] should be the vector of standard normally distributed numbers.
+		PayOut interface: This interface of calculate the payout, the returned double should be the payout after each simulation.
+		StockPath interface: This interface of generating the simulate stock paths, the returned List<DPPoint> should be the list of Date-Price Points. 
 
 * This program contains eight java class files:
 
-	*GuassianRandomVeriableGenerator
-	*AntitheticDecoratorGenerator
-	*CallOptionPayout
-	*AsianCallPayout
-	*BrownianStockPathGenerator
-	*DPPoint
-	*StatsCollector
-	*MonteCarloSimulation
+		GuassianRandomVeriableGenerator
+		AntitheticDecoratorGenerator
+		CallOptionPayout
+		AsianCallPayout
+		BrownianStockPathGenerator
+		DPPoint
+		StatsCollector
+		MonteCarloSimulation
 
 	*GuassianRandomVeriableGenerator: This is the GuassianRandomVeriableGenerator class implementing RandomVariableGenerator interface.
 
@@ -73,10 +78,10 @@ DESCRIPTION:
 
 * This program contains four test files:
 
-	*GuassianRandomVeriableGeneratorTest
-	*AntitheticDecoratorGeneratorTest
-	*DPPointTest
-	*MonteCarloSimulationTest(This test contains 3 tests: test for AsianCallPayout, EuropeanCallPayout, Brownian Stock Path using Mokito)
+		GuassianRandomVeriableGeneratorTest
+		AntitheticDecoratorGeneratorTest
+		DPPointTest
+		MonteCarloSimulationTest(This test contains 3 tests: test for AsianCallPayout, EuropeanCallPayout, Brownian Stock Path using Mokito)
 
 *GuassianRandomVeriableGeneratorTest: This test returns the size of the random generate vector. 
 *AntitheticDecoratorGeneratorTest: This test returns the size of the decorated random generate vector.
