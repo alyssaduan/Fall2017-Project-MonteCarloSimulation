@@ -1,6 +1,7 @@
-# Fall2017-Project-MonteCarloSimulation
+# New York University Fall2017-Project-MonteCarloSimulation
 
 Computing in Finance(Fall 2017) - Monte Carlo Simulation Project
+This repository contains Java codes for the Monte Carlo Simulation project.
 
 RECOMMENDS:
 
